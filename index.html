@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer - Just a timer.</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/b9eb488080.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <div id="timer">
+        <input type="number" id="minutes" value="00" min="0" max="60" oninput="validateTimer(this)"/>
+        <h1>:</h1>
+        <input type="number" id="seconds" value="00" min="0" max="60" oninput="validateTimer(this)"/>
+    </div>
+
+    <div id="buttons">
+        <a onclick="startTimer()"> <i id="play" class="fa-solid fa-play"> </i></a>
+        <a onclick="pauseTimer()"> <i id="pause" class="fa-solid fa-pause"> </i></a> 
+        <a onclick="resetTimer()"> <i id="reset" class="fa-solid fa-stop"> </i></a>
+    </div>
+</body>
+</html>
